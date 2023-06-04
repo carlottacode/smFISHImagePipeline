@@ -1,0 +1,8 @@
+jupyter-book
+jupyterlab
+napari[all]
+napari-animation
+big-fish
+scikit-image
+stackview
+jupyterlab-filesystem-access
