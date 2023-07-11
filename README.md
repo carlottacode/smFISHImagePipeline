@@ -10,5 +10,5 @@ conda install -c anaconda opencv==4.6.0<br>
 conda install -c conda-forge jupyterlab==3.5.0<br>
 pip install shapely==2.0.1<br>
 python -m pip install cellpose[gui]<br>
-jupyter-notebook<\p>
+jupyter-notebook</p>
 
