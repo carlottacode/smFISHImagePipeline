@@ -9,4 +9,6 @@ pip install scikit-image==0.21.0
 conda install -c anaconda opencv==4.6.0
 conda install -c conda-forge jupyterlab==3.5.0
 pip install shapely==2.0.1
+python -m pip install cellpose[gui]
 jupyter-notebook
+
