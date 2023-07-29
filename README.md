@@ -1,8 +1,12 @@
-# smFISH Image Quantification Pipeline for Yeast
+# smFISH Image Quantification Pipeline for Budding Yeast
 
-# Installation
-## conda environment
-<p>conda create -n carlotta_env python=3.9 -y<br>
+# :green_heart: Aim :green_heart:
+- The aim of this pipeline is to quantify smFISH images by detecting mRNA spots and assigning these to individual cells. 
+- This allows further investigation into localisation patterns of different mRNAs within yeast cells. 
+
+# :star2: Installation :star2:
+## Setting up a virtual conda environment
+<p>conda create -n smFISH_quantification python=3.9 -y<br>
 conda activate carlotta_env<br>
 pip install napari[all]<br>
 pip install big-fish==0.6.2<br>
@@ -17,13 +21,9 @@ pip install xlsxwriter?<br>
 jupyter-notebook</p>
 
 
-# Aim
-- The aim of this pipeline is to quantify smFISH images by detecting mRNA spots and assigning these to individual cells. 
-- This allows further investigation into localisation patterns of different mRNAs within yeast cells. 
+# :raised_hands: Usage :raised_hands:
 
-# Usage
-
-## Steps within the Pipeline
+### Steps within the Pipeline:
 #### Data
 - This pipeline allows the user to input two .tif image file paths - a fluorescent image stack and a corresponding DIC image. 
 - The fluorescent image stack is split according to the channels specified. 
