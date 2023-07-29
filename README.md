@@ -7,6 +7,9 @@
 ## :hourglass: Getting started...:hourglass:
 
 #### :star2:Setting up a virtual conda environment:star2:
+
+##### To set up a conda environment for this pipeline, run each of these lines in conda individually and sequentially.
+
 <p>conda create -n smFISH_quantification python=3.9 -y<br>
 conda activate smFISH_quantification<br>
 pip install napari[all]<br>
@@ -21,12 +24,13 @@ pip install openpyxl==3.1.2<br>
 pip install xlsxwriter==3.1.2<br>
 jupyter-notebook</p>
 
-#### :computer:Running the notebook...:computer:
-- Make sure that you have changed any relevant user input (described in further detail below) in the cell highlighted in the notebook. 
+#### :computer:Running the notebook:computer:
+- Make sure that any relevant user input has been changed (described in further detail below) as denoted in the second 'code' cell in the notebook. 
 - Then simply run all cells (you can do this by going to Cell in the toolbar and then Run All). 
+##### :smiley:Customising the pipeline:smiley:
 - If you only wish to use one Cellpose model replace path strings assigned to the variables **pretrained_separate_model_path** and **pretrained_whole_SHIFTCORRECTED_model_path** with **None**. 
 - If you wish to run a Cellpose model and after the shift has been corrected run with a more accurate Cellpose model only set the variable **pretrained_separate_model_path** equal to **None**. 
-
+- If you wish to use your own pre-trained Cellpose model change the path string of **pretrained_whole_model_path** and set the other two Cellpose model path variables to **None** as shown in the notebook.
 
 ## :raised_hands: Steps within the Pipeline :raised_hands:
 1. **Data**
