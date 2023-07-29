@@ -15,6 +15,8 @@ python -m pip install cellpose[gui]<br>
 pip install openpyxl<br>
 pip install xlsxwriter?<br>
 jupyter-notebook</p>
+
+
 # Aim
 - The aim of this pipeline is to quantify smFISH images by detecting mRNA spots and assigning these to individual cells. 
 - This allows further investigation into localisation patterns of different mRNAs within yeast cells. 
@@ -39,7 +41,7 @@ jupyter-notebook</p>
 - The input for these Cellpose models is prepared using the DIC image with the DAPI maximum intensity projection. 
 	- Two Cellpose models are used to initially generate two different masks:
 		- "sep_model_1180" - This model segments the buds and mothers as different objects/cells. 
-		- "whole_model_993 " - This model segments the bud and the mother as one object/cell. 
+		- "whole_model_993" - This model segments the bud and the mother as one object/cell. 
 	- This approach has been implemented to help identify and label the mother and bud cells for subsequent analysis. 
 - During the acquisition of the fluorescent image stack and a corresponding DIC image there is a shift introduced, this shift (in this pipeline called the "DIC shift") must be corrected to allow for the accurate detection of mRNA spots per cell. 
 - The technical error of the shift between the DIC and the fluorescent channels is corrected by calculating the proportion of spots within cells vs outside of them. 
