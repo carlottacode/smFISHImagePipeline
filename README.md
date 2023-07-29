@@ -16,8 +16,8 @@ conda install -c anaconda opencv==4.6.0<br>
 conda install -c conda-forge jupyterlab==3.5.0<br>
 pip install shapely==2.0.1<br>
 python -m pip install cellpose[gui]<br>
-pip install openpyxl<br>
-pip install xlsxwriter?<br>
+pip install openpyxl==3.1.2<br>
+pip install xlsxwriter==3.1.2<br>
 jupyter-notebook</p>
 
 

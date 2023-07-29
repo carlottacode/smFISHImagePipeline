@@ -1,2 +1,3 @@
 # Ignore all notebook checkpoint files
-*.ipynb_checkpoints
+/scripts/.ipynb_checkpoints
+/scripts/__pycache__
