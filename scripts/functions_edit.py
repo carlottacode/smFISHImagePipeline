@@ -313,7 +313,7 @@ def mother_bud_reunion(whole_mask_coordinates, centroids):
 # and based on the area - each masks is either assigned the label of 'mother' or
 # 'bud' (with smaller area being 'bud' and larger area 'mother').
 # =============================================================================
-def mother_or_bud(maskpairs):
+def mother_or_bud(maskpairs, fov_sep):
     mother_bud_dict = {}
     for i in range(len(maskpairs)):
         # calculate the area of each related mask
@@ -567,5 +567,5 @@ def writing_dataframe_to_excel(output_path, whole_df_output, sep_df_output):
     with pd.ExcelWriter(results_excel_path, engine='xlsxwriter', engine_kwargs={'options': {'strings_to_numbers': True}}) as writer:
         whole_df_output.to_excel(writer, sheet_name='whole_cells')
         # If there is a separate DataFrame this is output on a different sheet
-        if sep_df_output != None:
+        if sep_df_output is not None:
             sep_df_output.to_excel(writer, sheet_name='mother_buds_separate')
