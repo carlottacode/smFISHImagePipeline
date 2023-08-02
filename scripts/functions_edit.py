@@ -564,7 +564,7 @@ def writing_metrics_to_DataFrame(fov, channels, im_channels, celltype_dictionary
 # as the "whole" cell model both of these DataFrames are output on different sheets.
 # =============================================================================
 def writing_dataframe_to_excel(output_path, whole_df_output, sep_df_output):
-    with pd.ExcelWriter(results_excel_path, engine='xlsxwriter', engine_kwargs={'options': {'strings_to_numbers': True}}) as writer:
+    with pd.ExcelWriter(output_path, engine='xlsxwriter', engine_kwargs={'options': {'strings_to_numbers': True}}) as writer:
         whole_df_output.to_excel(writer, sheet_name='whole_cells')
         # If there is a separate DataFrame this is output on a different sheet
         if sep_df_output is not None:
